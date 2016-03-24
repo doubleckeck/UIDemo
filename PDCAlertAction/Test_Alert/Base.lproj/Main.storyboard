@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGB-lm-cHO">
+                                <rect key="frame" x="10" y="550" width="138" height="30"/>
+                                <state key="normal" title="ios7 alert"/>
+                                <connections>
+                                    <action selector="ios7Alert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zi8-kw-eRh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSK-M3-dzN">
+                                <rect key="frame" x="158" y="550" width="137" height="30"/>
+                                <state key="normal" title="ios7 actionsheet"/>
+                                <connections>
+                                    <action selector="ios7Actionsheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qoX-Wl-zFf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7iV-Od-9xJ">
+                                <rect key="frame" x="305" y="550" width="138" height="30"/>
+                                <state key="normal" title="ios8 alert"/>
+                                <connections>
+                                    <action selector="ios8Alert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XkX-Vb-aZi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFM-Co-crB">
+                                <rect key="frame" x="453" y="550" width="137" height="30"/>
+                                <state key="normal" title="ios8 actionsheet"/>
+                                <connections>
+                                    <action selector="ios8Actionsheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WmB-bg-eSi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KGB-lm-cHO" secondAttribute="bottom" constant="20" id="1fy-0H-ZMW"/>
+                            <constraint firstItem="KGB-lm-cHO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="3Kx-Je-YBZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7iV-Od-9xJ" secondAttribute="bottom" constant="20" id="3d3-L2-ISt"/>
+                            <constraint firstAttribute="trailing" secondItem="gFM-Co-crB" secondAttribute="trailing" constant="10" id="BkY-0x-laf"/>
+                            <constraint firstItem="gFM-Co-crB" firstAttribute="width" secondItem="KGB-lm-cHO" secondAttribute="width" id="Cv1-da-Pf6"/>
+                            <constraint firstItem="uSK-M3-dzN" firstAttribute="leading" secondItem="KGB-lm-cHO" secondAttribute="trailing" constant="10" id="Koh-AE-bWj"/>
+                            <constraint firstItem="7iV-Od-9xJ" firstAttribute="leading" secondItem="uSK-M3-dzN" secondAttribute="trailing" constant="10" id="TVp-i1-YkL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gFM-Co-crB" secondAttribute="bottom" constant="20" id="Tgn-0C-0wO"/>
+                            <constraint firstItem="uSK-M3-dzN" firstAttribute="width" secondItem="KGB-lm-cHO" secondAttribute="width" id="XVY-w4-i5p"/>
+                            <constraint firstItem="gFM-Co-crB" firstAttribute="leading" secondItem="7iV-Od-9xJ" secondAttribute="trailing" constant="10" id="rQw-8Q-0ZM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uSK-M3-dzN" secondAttribute="bottom" constant="20" id="rjG-PK-V1l"/>
+                            <constraint firstItem="7iV-Od-9xJ" firstAttribute="width" secondItem="KGB-lm-cHO" secondAttribute="width" id="z8H-Zl-jLi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
